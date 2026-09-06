@@ -1,0 +1,19 @@
+[project]
+name = "hr-attendance-mcp"
+version = "0.1.0"
+description = "HR Attendance MCP Server"
+readme = "README.md"
+authors = [
+    { name = "soykot", email = "diptopodder95@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.31.0",
+    "mcp[cli]",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.0.52",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
