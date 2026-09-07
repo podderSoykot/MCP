@@ -1,3 +1,7 @@
 uv run mcp dev src/hr_attendance_mcp/server.py
 
 employee done
+
+
+# Can implement face based attendence.
+# 
