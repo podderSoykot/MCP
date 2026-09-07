@@ -3,6 +3,9 @@ from mcp.server.mcpserver import MCPServer
 from hr_attendance_mcp.tools.attendance import (
     register_attendance_tools,
 )
+from hr_attendance_mcp.tools.employee import (
+    register_employee_tools,
+)
 
 
 # ============================================================
@@ -20,6 +23,7 @@ mcp = MCPServer(
 # ============================================================
 
 register_attendance_tools(mcp)
+register_employee_tools(mcp)
 
 
 
