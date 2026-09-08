@@ -11,7 +11,9 @@ from hr_attendance_mcp.tools.employee import (
 from hr_attendance_mcp.tools.analytics import (
     register_analytics_tools,
 )
-
+from hr_attendance_mcp.tools.attendance_actions import (
+    register_attendance_action_tools,
+)
 
 # ============================================================
 # MCP SERVER
@@ -30,7 +32,7 @@ mcp = MCPServer(
 register_attendance_tools(mcp)
 register_employee_tools(mcp)
 register_analytics_tools(mcp)
-
+register_attendance_action_tools(mcp)
 
 
 if __name__ == "__main__":

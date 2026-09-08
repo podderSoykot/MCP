@@ -39,7 +39,7 @@ def register_analytics_tools(mcp):
 
             present_result= await db.execute(
                 select(func.count(Attendance.id)).join(Employee,Employee.id==Attendance.employee_id).where(
-                    Attendance.date.between(start_date,end_date),
+                    Attendance.attendance_date.between(start_date,end_date),
                     Employee.is_active.is_(True),
                 )
             )
